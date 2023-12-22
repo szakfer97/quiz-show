@@ -1,4 +1,4 @@
-// QuizShow programme made by Szakacsi Ferenc-Adam/
+// quiz-show programme made by Szakacsi Ferenc-Adam/
 
 // Select all elements by id
 const start = document.getElementById("start");
