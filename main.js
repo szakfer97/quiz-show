@@ -205,7 +205,7 @@ function startQuiz() {
   quiz.style.display = "block";
   renderProgress();
   renderCounter();
-  Timer = setInterval(renderCounter, 1000); // 1000ms = 1s
+  Timer = setInterval(renderCounter, 1000);
 }
 
 function renderProgress() {
@@ -283,7 +283,7 @@ function scoreRender() {
 }
 
 function myLoader() {
-  setTimeout(showPage, 20000);
+  setTimeout(showPage, 10000);
 }
 
 function showPage() {

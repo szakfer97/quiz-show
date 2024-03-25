@@ -1,49 +1,51 @@
-<!--quiz-show made by Szakacsi Ferenc-Adam-->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="keywords" content="QuizShow" />
-    <meta name="description" content="A quiz game." />
-    <meta name="author" content="Szakacsi Ferenc-Adam" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="public/vite.svg" rel="icon" />
-    <title>quiz-show</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body onload="myLoader()" style="margin: 0;">
-    <div id="loader">
-      <p class="fade-in">
-        <b>Welcome to QuizShow</b><br /><br />
-        This game's aim is to test your general knowledge.<br />
-         You'll have 20 seconds to answer each question.<br />
-        The game registers your answers and tallies them up.<br />
-        At the end you'll be given a percentage score.<br /><br />
-        Loading....
-      </p>
-    </div>
-    <div id="container">
-      <button id="start">Start Quiz!</button>
-      <div id="start-questiontext">There will be 20 questions, each becomes harder as you progress.</div>
-      <div id="start-readytext">Click start when ready!</div>
-      <div id="quiz" style="display: none;">
-        <div id="question"></div>
-        <div id="choices">
-          <button class="choice" id="A" onclick="checkAnswer('A')"></button>
-          <button class="choice" id="B" onclick="checkAnswer('B')"></button>
-          <button class="choice" id="C" onclick="checkAnswer('C')"></button>
-          <button class="choice" id="D" onclick="checkAnswer('D')"></button>
-        </div>
-        <div id="timer">
-          <div id="counter"></div>
-        </div>
-        <div id="progress"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="keywords" content="QuizShow" />
+  <meta name="description" content="A quiz game." />
+  <meta name="author" content="Szakacsi Ferenc-Adam" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="public/vite.svg" rel="icon" />
+  <title>Quiz show</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body onload="myLoader()" style="margin: 0;">
+  <div id="loader">
+    <p class="fade-in">
+      <b>Welcome to QuizShow</b><br /><br />
+      This game's aim is to test your general knowledge.<br />
+      You'll have 20 seconds to answer each question.<br />
+      The game registers your answers and tallies them up.<br />
+      At the end you'll be given a percentage score.<br /><br />
+      Loading....
+    </p>
+  </div>
+  <div id="container">
+    <button id="start">Start Quiz!</button>
+    <div id="start-questiontext">There will be 20 questions, each becomes harder as you progress.</div>
+    <div id="start-readytext">Click start when ready!</div>
+    <div id="quiz" style="display: none;">
+      <div id="question"></div>
+      <div id="choices">
+        <button class="choice" id="A" onclick="checkAnswer('A')"></button>
+        <button class="choice" id="B" onclick="checkAnswer('B')"></button>
+        <button class="choice" id="C" onclick="checkAnswer('C')"></button>
+        <button class="choice" id="D" onclick="checkAnswer('D')"></button>
       </div>
-      <div id="scoreContainer" style="display: none;"></div>
+      <div id="timer">
+        <div id="counter"></div>
+      </div>
+      <div id="progress"></div>
     </div>
-    <footer>
-      Copyright © 2023 - All rights Reserved - Made by Szakacsi Ferenc-Adam
-    </footer>
-    <script src="main.js"></script>
-  </body>
+    <div id="scoreContainer" style="display: none;"></div>
+  </div>
+  <footer>
+    Copyright © 2023 - All rights Reserved - Made by Szakacsi Ferenc-Adam
+  </footer>
+  <script src="main.js"></script>
+</body>
+
 </html>
